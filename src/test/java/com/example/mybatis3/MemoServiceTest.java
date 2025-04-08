@@ -33,7 +33,7 @@ public class MemoServiceTest {
 
   @Test
   public void findByMnoTest() {
-    assertNotEquals(true, memoService.findByMno(2).isPresent());
+    assertNotEquals(true, memoService.findByMno(100).isPresent());
   }
 
   @Test

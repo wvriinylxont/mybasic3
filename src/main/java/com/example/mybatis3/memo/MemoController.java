@@ -19,7 +19,7 @@ public class MemoController {
   }
 
   @GetMapping("/memo/read")
-  public ModelAndView findByBno(@RequestParam Integer mno) {
+  public ModelAndView findByMno(@RequestParam Integer mno) {
     Optional<Memo> result = memoService.findByMno(mno);
     if(result.isEmpty())
       return new ModelAndView("redirect:/memo/list");
